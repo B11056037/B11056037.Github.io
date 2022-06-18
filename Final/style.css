@@ -1,5 +1,9 @@
-body {
+    body {
     font-family: DFKai-sb;
+}
+
+.V1 {
+    align: center;
 }
 
 .simg {
@@ -53,6 +57,26 @@ span~#tab>div:first-of-type,
     background: #fff;
 }
 
+@media(min-width:901px) {
+    .infobox {
+        font-size: 90%;
+        position: relative;
+        border: 1px solid #eaecf0;
+        margin-bottom: 200px;
+        display: flex;
+        flex: 1 1 100%;
+        flex-flow: column nowrap;
+        width: 100% !important;
+        max-width: 100% !important;
+    }
+    .V1 {
+        display: none;
+    }
+    .S1 {
+        display: none;
+    }
+}
+
 @media(max-width: 900px) {
     #tab {
         background-color: orange;
@@ -67,6 +91,12 @@ span~#tab>div:first-of-type,
     h1 {
         color: aqua;
         background-color: darkblue;
+    }
+    .V2 {
+        display: none;
+    }
+    .S1 {
+        display: none;
     }
 }
 
@@ -86,4 +116,20 @@ span~#tab>div:first-of-type,
     .simg {
         display: none;
     }
-}
+    iframe {
+        display: none;
+    }
+    .S1 {
+        display: inline;
+        background-color: yellow;
+        text-align: center;
+    }
+    a {
+        color: red;
+    }
+    A:visited {
+        color: green;
+    }
+    A:active {
+        color: rgb(195, 195, 245);
+    }
